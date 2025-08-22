@@ -1,0 +1,28 @@
+[cli]
+ignore_new_version_warning = false
+
+[cli.logs]
+save_logs = true
+path = "C:\\Users\\alejandro.pedrero\\.snowflake\\logs"
+level = "info"
+
+
+
+# Conexión por defecto
+default_connection_name = "advanced_data_engineering_snowflake"
+
+[connections]
+[connections.advanced_data_engineering_snowflake]
+account = "HZJHGIE-HHB21809"
+user = "ALEXADMIN"
+password = "Metallega.2025"
+role = "ACCOUNTADMIN"
+warehouse = "COMPUTE_WH"
+
+
+[connections.default]
+account = "HZJHGIE-HHB21809"
+user = "ALEXADMIN"
+password = "Metallega.2025"
+role = "ACCOUNTADMIN"
+warehouse = "COMPUTE_WH"
