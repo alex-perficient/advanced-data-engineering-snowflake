@@ -280,7 +280,7 @@ SELECT DATE(o.order_ts) AS date, * FROM {{env}}_tasty_bytes.harmonized.orders_v 
 
 -- customer_loyalty_metrics_v view
 CREATE OR REPLACE VIEW {{env}}_tasty_bytes.analytics.customer_loyalty_metrics_v
-COMMENT = 'Tasty Bytes Customer Loyalty Member Metrics View'
+COMMENT = 'Tasty Bytes Customer Loyalty Member Metrics Viewww'
    AS
 SELECT * FROM {{env}}_tasty_bytes.harmonized.customer_loyalty_metrics_v;
 
@@ -292,13 +292,12 @@ raw zone table load
 
 USE WAREHOUSE demo_build_wh;
 
-
 -- country table load
  COPY INTO {{env}}_tasty_bytes.raw_pos.country
  FROM @{{env}}_tasty_bytes.public.s3load/raw_pos/country/;
 
 
--- franchise table load
+-- franchise table load aaa
 COPY INTO {{env}}_tasty_bytes.raw_pos.franchise
 FROM @{{env}}_tasty_bytes.public.s3load/raw_pos/franchise/;
 
